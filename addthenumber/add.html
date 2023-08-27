@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDTITION</title>
+    <style>
+    #heading{
+        text-align: center;
+        text-transform: capitalize;
+        text-shadow: 12cm;
+    }
+    input[type="number"]{
+        height: 10px;
+        width:120px;
+        align-items: center;
+
+    }
+    
+    body {
+    
+    background: linear-gradient(to bottom right, #F1F2B5, #eef2f3);
+}
+.add{
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+    #answer{
+        text-align: center;
+    }
+    #result{
+        text-align:center;
+    }
+    input[type="number"] {
+     width:100px;
+     height:30px;
+     margin-left:2px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">ADDITION</h1>
+    <div id="add" class="add">
+        <input id="first" text="number" placeholder="Enter the first Number" style="height:30px;"><br>
+        </div>
+        <div id="add1" class="add">
+        <input id="second" text="number" placeholder="Enter the second Number" style="height:30px;">
+</div>
+    
+    <div id="answer">
+    <button id="submit" type="submit" onclick="Addnumber()" style="width:120px; background-color:lightgreen">ADD</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function Addnumber(){
+const num1= Number(document.getElementById('first').value)
+const num2= Number(document.getElementById('second').value)
+let add=num1+num2;
+const result=document.getElementById('result')
+result.innerHTML=add
+        }
+    </script>
+</body>
+</html>
